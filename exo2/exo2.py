@@ -56,12 +56,12 @@ fixed_tests_False = (
 class TestSolution(unittest.TestCase):
     def test_true_cases(self):
         for string, ending in fixed_tests_True:
-            with self.subTest(string=string, ending=ending):
+            with self.subTest(arg1=string, arg2=ending):
                 self.assertTrue(solution(string, ending))
 
     def test_false_cases(self):
         for string, ending in fixed_tests_False:
-            with self.subTest(string=string, ending=ending):
+            with self.subTest(arg1=string, arg2=ending):
                 self.assertFalse(solution(string, ending))
 
 if __name__ == '__main__':
